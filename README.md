@@ -1,16 +1,106 @@
-# React + Vite
+# Code Export Popup Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application featuring a modal popup component for code export functionality with HTML & CSS and Next.JS options.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive popup modal with close functionality
+- Tab switching between HTML & CSS and Next.JS export options
+- Customizable checkboxes for export preferences
+- Responsive design with dark theme
+- Clean, modern UI with rounded corners and smooth transitions
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Make sure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- npm (comes with Node.js) or yarn
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository**
+   ```bash
+   git clone <your-repository-url>
+   cd <your-project-name>
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+   or if you're using yarn:
+   ```bash
+   yarn install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   or with yarn:
+   ```bash
+   yarn dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` (or the port shown in your terminal) to view the application.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Button.jsx
+│   ├── Popup.jsx
+│   └── Popup.css
+├── assets/
+│   ├── 1.svg
+│   ├── 2.svg
+│   └── react.svg
+├── App.jsx
+└── main.jsx
+```
+
+## Usage
+
+- Click the "EXPORT CODE" button to open the popup modal
+- Switch between "HTML & CSS" and "Next.JS" tabs
+- Toggle export options using the checkboxes
+- Click the download button or close (X) button to dismiss the modal
+
+## Components
+
+### Popup Component
+The main modal component that handles:
+- Tab switching functionality
+- Checkbox state management  
+- Export option selection
+- Modal open/close behavior
+
+### Button Component
+A reusable button component used to trigger the popup.
+
+## Customization
+
+You can customize the popup appearance by modifying the CSS variables and styles in `Popup.css`. Key customizable elements include:
+- Background colors
+- Border radius values
+- Padding and spacing
+- Typography styles
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+
+## Technologies Used
+
+- React 18
+- Vite
+- CSS3
+- SVG icons
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
